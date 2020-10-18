@@ -93,7 +93,7 @@ long long hx711_readOne(u8 sensorID, long long basicNumber) {
 
 void hx711_readAll(u8 n) { //传入参数为第几次(3/4 OR 1/2)获取全部数值 3/4为初始化时的第一/二次 第二次均计算平均值（用于解决hx711的adc转换130ms延时问题） 5测试用
     u8 i;
-    for(i = 1; i < 2; i++) {//ID:1-5
+    for(i = 1; i < 6; i++) {//ID:1-5
         switch(n) {
         case 1:
             hx711PinData[i].num1 = hx711_readOne(i, hx711PinData[i].basicNum);
@@ -132,7 +132,7 @@ void hx711_Detect(){
     delay_ms(110);
     hx711_readAll(2);
 		delay_ms(55);
-    for(int i = 1; i < 2; i++) {
+    for(int i = 1; i < 6; i++) {
         if((hx711PinData[i].numAvg - hx711PinData[i].oldNumAvg) > (Sensitivity + specificSensivity[i])) {//没有基于初始值做判断 单纯靠最近两次数值
             trigStat[i - 1] = 1;
         }

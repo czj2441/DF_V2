@@ -72,8 +72,6 @@ void checkSensors(){
 					trigStat[i] = 0;
 					if(i != halfOnLed) ctrlMode = 1;
 					else ctrlMode = 2;
-					if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_10)) GPIO_ResetBits(GPIOB, GPIO_Pin_10);
-					else GPIO_SetBits(GPIOB, GPIO_Pin_10);
 				}
 		}
 }

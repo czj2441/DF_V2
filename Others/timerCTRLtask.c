@@ -8,7 +8,7 @@ void timeTaskControl() {
             //ctrlMode = 1;
             countDownTime = onPowerTime;
 		}
-		/*if(onPowerTime % 300 == 0){
+		if(onPowerTime % 300 == 0){
 				if(onPowerTime - lastDataTime >= 200){
 						if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_10)) GPIO_ResetBits(GPIOB, GPIO_Pin_10);
 						else GPIO_SetBits(GPIOB, GPIO_Pin_10);
@@ -17,6 +17,6 @@ void timeTaskControl() {
 						if(GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11)) GPIO_ResetBits(GPIOB, GPIO_Pin_11);
 						else GPIO_SetBits(GPIOB, GPIO_Pin_11);
 				}
-		}*/
+		}
 		if(onPowerTime % 600 == 0) ledFlashFlag = 1;
 }
