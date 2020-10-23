@@ -3,7 +3,7 @@
 struct hx711Info hx711PinData[6];
 
 u8 trigStat[5];
-#define Sensitivity 3000//全局普适灵敏度
+#define Sensitivity 1500//全局普适灵敏度
 u32 specificSensivity[6] = {0, 0, 0, 0, 1000, 0};
 long long adValue1, adValue2, adValue3, adValue4, adValue5;//JSCOPE调试用
 

@@ -9,8 +9,8 @@ u8 ledStat[5], fullOnLedNum, halfOnLed;//LED模式（0关、1半开、2全开）；全亮的LED
 {27,7,7,15,7,7,27,4,9,18,18,9,4},
 {27,7,7,15,7,7,27,4,9,18,18,9,4}
 };*/
-u8 ledEZPara[5] = {100,100,101,101,101};//能量机关锤子灯数量
-extern u8 ctrlMode, trigStat[5];
+u8 ledEZPara[5] = {100,100,100,100,100};//能量机关锤子灯数量
+extern u8 ctrlMode, trigStat[5], ledFlashFlag;
 extern u32 onPowerTime, lastDataTime;
 
 u8 getRand(u8 low, u8 high) {//获取随机数
@@ -24,6 +24,7 @@ u8 getRand(u8 low, u8 high) {//获取随机数
 
 void ledCtrl(u8 ledID, u8 ledMode) {
     ledStat[ledID] = ledMode;
+		ledFlashFlag = 1;
 }
 
 void ledOFF() {
@@ -35,7 +36,7 @@ void ledAdd() {
     ledCtrl(halfOnLed, 2);//全开上一个半开LED
     fullOnLedNum++;
     if(fullOnLedNum == 5) {//若LED已经全开
-        ctrlMode = 4;
+        ctrlMode = 3;
         return;
     }
     do randomLedNum = getRand(0, 4);//随机找没开的LED
@@ -48,12 +49,13 @@ void ledReborn() {
     u8 randomLedNum;
     ledOFF();
     do randomLedNum = getRand(0, 4);//随机找没开的LED
-    while (ledStat[randomLedNum] != 0);
+    //while (ledStat[randomLedNum] != 0);
+		while (randomLedNum == halfOnLed);
     halfOnLed = randomLedNum;
     ledCtrl(randomLedNum, 1);
 }
 
-uint8_t red[][3] = {{255,0,0}}, off[][3] = {{0,0,0}};
+uint8_t red[][3] = {{0,255,255}}, off[][3] = {{0,0,0}};
 
 void ledFlash() {//LED控制
     for(u8 i = 0; i < 5; i++)

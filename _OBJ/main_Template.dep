@@ -1021,7 +1021,7 @@ I (..\_CORE\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x5DEBB9FF)
 I (..\_CORE\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
 I (..\_CORE\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\_CORE\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
-F (..\ExternalPeriph\hx711.c)(0x5F8C625A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\hx711.o --omf_browse ..\_obj\hx711.crf --depend ..\_obj\hx711.d)
+F (..\ExternalPeriph\hx711.c)(0x5F8FD3D6)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\hx711.o --omf_browse ..\_obj\hx711.crf --depend ..\_obj\hx711.d)
 I (..\ExternalPeriph\hx711.h)(0x5F7BF805)
 I (..\_Main\stm32f10x.h)(0x5F7BDD82)
 I (..\_CORE\core_cm3.h)(0x4D523B58)
@@ -1057,7 +1057,7 @@ I (..\Others\control.h)(0x5F87A6AB)
 I (C:\Program Files (x86)\Keil\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\ExternalPeriph\WS2812B.h)(0x5F86D11A)
 I (..\Algorithm\basicMath.h)(0x5EA83152)
-F (..\Others\timerCTRLtask.c)(0x5F8C622B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\timerctrltask.o --omf_browse ..\_obj\timerctrltask.crf --depend ..\_obj\timerctrltask.d)
+F (..\Others\timerCTRLtask.c)(0x5F8FD24D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\timerctrltask.o --omf_browse ..\_obj\timerctrltask.crf --depend ..\_obj\timerctrltask.d)
 I (..\Others\timerCTRLtask.h)(0x5F87A4B5)
 I (..\_Main\STM32F10x.h)(0x5F7BDD82)
 I (..\_CORE\core_cm3.h)(0x4D523B58)
@@ -1093,7 +1093,7 @@ I (C:\Program Files (x86)\Keil\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\ExternalPeriph\WS2812B.h)(0x5F86D11A)
 I (..\ExternalPeriph\hx711.h)(0x5F7BF805)
 I (..\Algorithm\basicMath.h)(0x5EA83152)
-F (..\Others\control.c)(0x5F8C621C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\control.o --omf_browse ..\_obj\control.crf --depend ..\_obj\control.d)
+F (..\Others\control.c)(0x5F8FD579)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\control.o --omf_browse ..\_obj\control.crf --depend ..\_obj\control.d)
 I (..\Others\control.h)(0x5F87A6AB)
 I (C:\Program Files (x86)\Keil\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\_Main\stm32f10x.h)(0x5F7BDD82)
@@ -1129,7 +1129,7 @@ I (..\Others\timerCTRLtask.h)(0x5F87A4B5)
 I (..\ExternalPeriph\WS2812B.h)(0x5F86D11A)
 I (..\ExternalPeriph\hx711.h)(0x5F7BF805)
 I (..\Algorithm\basicMath.h)(0x5EA83152)
-F (.\main.c)(0x5F8C320A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\main.o --omf_browse ..\_obj\main.crf --depend ..\_obj\main.d)
+F (.\main.c)(0x5F8FD445)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\_CORE -I ..\_CORE\STM32F10x_FWLib\inc -I ..\Algorithm -I ..\ExternalPeriph -I ..\InternalPeriph -I ..\Others -I ..\_Main-IC:\Users\Lemonade\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-I"C:\Program Files (x86)\Keil\ARM\CMSIS\Include"-D__UVISION_VERSION="532" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\_obj\main.o --omf_browse ..\_obj\main.crf --depend ..\_obj\main.d)
 I (..\Others\control.h)(0x5F87A6AB)
 I (C:\Program Files (x86)\Keil\ARM\ARMCC\include\stdlib.h)(0x5F63877C)
 I (..\_Main\stm32f10x.h)(0x5F7BDD82)
