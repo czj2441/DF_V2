@@ -246,6 +246,7 @@ Section Cross References
     control.o(i.ledFlash) refers to ws2812b.o(i.ws2812Ctrl) for ws2812Ctrl
     control.o(i.ledFlash) refers to control.o(.data) for ledStat
     control.o(i.ledOFF) refers to control.o(i.ledCtrl) for ledCtrl
+    control.o(i.ledOFF) refers to control.o(.data) for fullOnLedNum
     control.o(i.ledReborn) refers to control.o(i.ledOFF) for ledOFF
     control.o(i.ledReborn) refers to control.o(i.getRand) for getRand
     control.o(i.ledReborn) refers to control.o(i.ledCtrl) for ledCtrl
@@ -988,20 +989,20 @@ Image Symbol Table
     i.hx711_readAll                          0x080018cc   Section        0  hx711.o(i.hx711_readAll)
     i.hx711_readOne                          0x08001a7c   Section        0  hx711.o(i.hx711_readOne)
     i.ledAdd                                 0x08001b90   Section        0  control.o(i.ledAdd)
-    i.ledCtrl                                0x08001bec   Section        0  control.o(i.ledCtrl)
-    i.ledFlash                               0x08001c00   Section        0  control.o(i.ledFlash)
-    i.ledOFF                                 0x08001c64   Section        0  control.o(i.ledOFF)
-    i.ledReborn                              0x08001c7c   Section        0  control.o(i.ledReborn)
-    i.main                                   0x08001ca8   Section        0  main.o(i.main)
-    i.onBoardLedInit                         0x08001d8c   Section        0  controlsignal.o(i.onBoardLedInit)
-    i.timeTaskControl                        0x08001df8   Section        0  timerctrltask.o(i.timeTaskControl)
-    i.ws2812Ctrl                             0x08001ed0   Section        0  ws2812b.o(i.ws2812Ctrl)
-    i.ws2812Init                             0x08001f1c   Section        0  ws2812b.o(i.ws2812Init)
-    i.ws2812_led1_send                       0x08002118   Section        0  ws2812b.o(i.ws2812_led1_send)
-    i.ws2812_led2_send                       0x08002228   Section        0  ws2812b.o(i.ws2812_led2_send)
-    i.ws2812_led3_send                       0x08002334   Section        0  ws2812b.o(i.ws2812_led3_send)
-    i.ws2812_led4_send                       0x0800244c   Section        0  ws2812b.o(i.ws2812_led4_send)
-    i.ws2812_led5_send                       0x0800255c   Section        0  ws2812b.o(i.ws2812_led5_send)
+    i.ledCtrl                                0x08001bfc   Section        0  control.o(i.ledCtrl)
+    i.ledFlash                               0x08001c10   Section        0  control.o(i.ledFlash)
+    i.ledOFF                                 0x08001c74   Section        0  control.o(i.ledOFF)
+    i.ledReborn                              0x08001c98   Section        0  control.o(i.ledReborn)
+    i.main                                   0x08001cc4   Section        0  main.o(i.main)
+    i.onBoardLedInit                         0x08001da4   Section        0  controlsignal.o(i.onBoardLedInit)
+    i.timeTaskControl                        0x08001e10   Section        0  timerctrltask.o(i.timeTaskControl)
+    i.ws2812Ctrl                             0x08001f0c   Section        0  ws2812b.o(i.ws2812Ctrl)
+    i.ws2812Init                             0x08001f58   Section        0  ws2812b.o(i.ws2812Init)
+    i.ws2812_led1_send                       0x08002154   Section        0  ws2812b.o(i.ws2812_led1_send)
+    i.ws2812_led2_send                       0x08002264   Section        0  ws2812b.o(i.ws2812_led2_send)
+    i.ws2812_led3_send                       0x08002370   Section        0  ws2812b.o(i.ws2812_led3_send)
+    i.ws2812_led4_send                       0x08002488   Section        0  ws2812b.o(i.ws2812_led4_send)
+    i.ws2812_led5_send                       0x08002598   Section        0  ws2812b.o(i.ws2812_led5_send)
     .data                                    0x20000000   Section       20  stm32f10x_rcc.o(.data)
     APBAHBPrescTable                         0x20000000   Data          16  stm32f10x_rcc.o(.data)
     ADCPrescTable                            0x20000010   Data           4  stm32f10x_rcc.o(.data)
@@ -1189,23 +1190,23 @@ Image Symbol Table
     hx711_Init                               0x080018b1   Thumb Code    26  hx711.o(i.hx711_Init)
     hx711_readAll                            0x080018cd   Thumb Code   408  hx711.o(i.hx711_readAll)
     hx711_readOne                            0x08001a7d   Thumb Code   270  hx711.o(i.hx711_readOne)
-    ledAdd                                   0x08001b91   Thumb Code    74  control.o(i.ledAdd)
-    ledCtrl                                  0x08001bed   Thumb Code    12  control.o(i.ledCtrl)
-    ledFlash                                 0x08001c01   Thumb Code    84  control.o(i.ledFlash)
-    ledOFF                                   0x08001c65   Thumb Code    24  control.o(i.ledOFF)
-    ledReborn                                0x08001c7d   Thumb Code    40  control.o(i.ledReborn)
-    main                                     0x08001ca9   Thumb Code   198  main.o(i.main)
-    onBoardLedInit                           0x08001d8d   Thumb Code   104  controlsignal.o(i.onBoardLedInit)
-    timeTaskControl                          0x08001df9   Thumb Code   182  timerctrltask.o(i.timeTaskControl)
-    ws2812Ctrl                               0x08001ed1   Thumb Code    76  ws2812b.o(i.ws2812Ctrl)
-    ws2812Init                               0x08001f1d   Thumb Code   456  ws2812b.o(i.ws2812Init)
-    ws2812_led1_send                         0x08002119   Thumb Code   258  ws2812b.o(i.ws2812_led1_send)
-    ws2812_led2_send                         0x08002229   Thumb Code   254  ws2812b.o(i.ws2812_led2_send)
-    ws2812_led3_send                         0x08002335   Thumb Code   266  ws2812b.o(i.ws2812_led3_send)
-    ws2812_led4_send                         0x0800244d   Thumb Code   258  ws2812b.o(i.ws2812_led4_send)
-    ws2812_led5_send                         0x0800255d   Thumb Code   260  ws2812b.o(i.ws2812_led5_send)
-    Region$$Table$$Base                      0x08002668   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08002688   Number         0  anon$$obj.o(Region$$Table)
+    ledAdd                                   0x08001b91   Thumb Code    90  control.o(i.ledAdd)
+    ledCtrl                                  0x08001bfd   Thumb Code    12  control.o(i.ledCtrl)
+    ledFlash                                 0x08001c11   Thumb Code    84  control.o(i.ledFlash)
+    ledOFF                                   0x08001c75   Thumb Code    30  control.o(i.ledOFF)
+    ledReborn                                0x08001c99   Thumb Code    40  control.o(i.ledReborn)
+    main                                     0x08001cc5   Thumb Code   194  main.o(i.main)
+    onBoardLedInit                           0x08001da5   Thumb Code   104  controlsignal.o(i.onBoardLedInit)
+    timeTaskControl                          0x08001e11   Thumb Code   218  timerctrltask.o(i.timeTaskControl)
+    ws2812Ctrl                               0x08001f0d   Thumb Code    76  ws2812b.o(i.ws2812Ctrl)
+    ws2812Init                               0x08001f59   Thumb Code   456  ws2812b.o(i.ws2812Init)
+    ws2812_led1_send                         0x08002155   Thumb Code   258  ws2812b.o(i.ws2812_led1_send)
+    ws2812_led2_send                         0x08002265   Thumb Code   254  ws2812b.o(i.ws2812_led2_send)
+    ws2812_led3_send                         0x08002371   Thumb Code   266  ws2812b.o(i.ws2812_led3_send)
+    ws2812_led4_send                         0x08002489   Thumb Code   258  ws2812b.o(i.ws2812_led4_send)
+    ws2812_led5_send                         0x08002599   Thumb Code   260  ws2812b.o(i.ws2812_led5_send)
+    Region$$Table$$Base                      0x080026a4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080026c4   Number         0  anon$$obj.o(Region$$Table)
     onPowerTime                              0x20000014   Data           4  timer6.o(.data)
     countDownTime                            0x20000018   Data           4  timer6.o(.data)
     lastDataTime                             0x2000001c   Data           4  timer6.o(.data)
@@ -1247,9 +1248,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000149
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x0000272c, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00002768, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00002688, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000026c4, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1360,46 +1361,46 @@ Memory Map of the image
     0x080018ca   0x080018ca   0x00000002   PAD
     0x080018cc   0x080018cc   0x000001b0   Code   RO         3566    i.hx711_readAll     hx711.o
     0x08001a7c   0x08001a7c   0x00000114   Code   RO         3567    i.hx711_readOne     hx711.o
-    0x08001b90   0x08001b90   0x0000005c   Code   RO         3621    i.ledAdd            control.o
-    0x08001bec   0x08001bec   0x00000014   Code   RO         3622    i.ledCtrl           control.o
-    0x08001c00   0x08001c00   0x00000064   Code   RO         3623    i.ledFlash          control.o
-    0x08001c64   0x08001c64   0x00000018   Code   RO         3624    i.ledOFF            control.o
-    0x08001c7c   0x08001c7c   0x0000002c   Code   RO         3625    i.ledReborn         control.o
-    0x08001ca8   0x08001ca8   0x000000e4   Code   RO         3671    i.main              main.o
-    0x08001d8c   0x08001d8c   0x0000006c   Code   RO         3475    i.onBoardLedInit    controlsignal.o
-    0x08001df8   0x08001df8   0x000000d8   Code   RO         3603    i.timeTaskControl   timerctrltask.o
-    0x08001ed0   0x08001ed0   0x0000004c   Code   RO         3512    i.ws2812Ctrl        ws2812b.o
-    0x08001f1c   0x08001f1c   0x000001fc   Code   RO         3513    i.ws2812Init        ws2812b.o
-    0x08002118   0x08002118   0x00000110   Code   RO         3514    i.ws2812_led1_send  ws2812b.o
-    0x08002228   0x08002228   0x0000010c   Code   RO         3515    i.ws2812_led2_send  ws2812b.o
-    0x08002334   0x08002334   0x00000118   Code   RO         3516    i.ws2812_led3_send  ws2812b.o
-    0x0800244c   0x0800244c   0x00000110   Code   RO         3517    i.ws2812_led4_send  ws2812b.o
-    0x0800255c   0x0800255c   0x0000010c   Code   RO         3518    i.ws2812_led5_send  ws2812b.o
-    0x08002668   0x08002668   0x00000020   Data   RO         3887    Region$$Table       anon$$obj.o
+    0x08001b90   0x08001b90   0x0000006c   Code   RO         3621    i.ledAdd            control.o
+    0x08001bfc   0x08001bfc   0x00000014   Code   RO         3622    i.ledCtrl           control.o
+    0x08001c10   0x08001c10   0x00000064   Code   RO         3623    i.ledFlash          control.o
+    0x08001c74   0x08001c74   0x00000024   Code   RO         3624    i.ledOFF            control.o
+    0x08001c98   0x08001c98   0x0000002c   Code   RO         3625    i.ledReborn         control.o
+    0x08001cc4   0x08001cc4   0x000000e0   Code   RO         3671    i.main              main.o
+    0x08001da4   0x08001da4   0x0000006c   Code   RO         3475    i.onBoardLedInit    controlsignal.o
+    0x08001e10   0x08001e10   0x000000fc   Code   RO         3603    i.timeTaskControl   timerctrltask.o
+    0x08001f0c   0x08001f0c   0x0000004c   Code   RO         3512    i.ws2812Ctrl        ws2812b.o
+    0x08001f58   0x08001f58   0x000001fc   Code   RO         3513    i.ws2812Init        ws2812b.o
+    0x08002154   0x08002154   0x00000110   Code   RO         3514    i.ws2812_led1_send  ws2812b.o
+    0x08002264   0x08002264   0x0000010c   Code   RO         3515    i.ws2812_led2_send  ws2812b.o
+    0x08002370   0x08002370   0x00000118   Code   RO         3516    i.ws2812_led3_send  ws2812b.o
+    0x08002488   0x08002488   0x00000110   Code   RO         3517    i.ws2812_led4_send  ws2812b.o
+    0x08002598   0x08002598   0x0000010c   Code   RO         3518    i.ws2812_led5_send  ws2812b.o
+    0x080026a4   0x080026a4   0x00000020   Data   RO         3887    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08002688, Size: 0x000000a4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x080026c4, Size: 0x000000a4, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08002688   0x00000014   Data   RW         1752    .data               stm32f10x_rcc.o
-    0x20000014   0x0800269c   0x00000010   Data   RW         3310    .data               timer6.o
-    0x20000024   0x080026ac   0x00000004   Data   RW         3355    .data               tickdelay.o
-    0x20000028   0x080026b0   0x00000048   Data   RW         3569    .data               hx711.o
-    0x20000070   0x080026f8   0x00000012   Data   RW         3626    .data               control.o
-    0x20000082   0x0800270a   0x00000002   PAD
-    0x20000084   0x0800270c   0x00000008   Data   RW         3672    .data               main.o
-    0x2000008c   0x08002714   0x00000014   Data   RW         3784    .data               system_stm32f10x.o
-    0x200000a0   0x08002728   0x00000004   Data   RW         3820    .data               mc_w.l(rand.o)
+    0x20000000   0x080026c4   0x00000014   Data   RW         1752    .data               stm32f10x_rcc.o
+    0x20000014   0x080026d8   0x00000010   Data   RW         3310    .data               timer6.o
+    0x20000024   0x080026e8   0x00000004   Data   RW         3355    .data               tickdelay.o
+    0x20000028   0x080026ec   0x00000048   Data   RW         3569    .data               hx711.o
+    0x20000070   0x08002734   0x00000012   Data   RW         3626    .data               control.o
+    0x20000082   0x08002746   0x00000002   PAD
+    0x20000084   0x08002748   0x00000008   Data   RW         3672    .data               main.o
+    0x2000008c   0x08002750   0x00000014   Data   RW         3784    .data               system_stm32f10x.o
+    0x200000a0   0x08002764   0x00000004   Data   RW         3820    .data               mc_w.l(rand.o)
 
 
-    Execution Region ER_ZI (Exec base: 0x200000a4, Load base: 0x0800272c, Size: 0x0000c2b4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x200000a4, Load base: 0x08002768, Size: 0x0000c2b4, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x200000a4        -       0x00000034   Zero   RW         3403    .bss                can1.o
     0x200000d8        -       0x0000bd2e   Zero   RW         3519    .bss                ws2812b.o
-    0x2000be06   0x0800272c   0x00000002   PAD
+    0x2000be06   0x08002768   0x00000002   PAD
     0x2000be08        -       0x00000150   Zero   RW         3568    .bss                hx711.o
     0x2000bf58        -       0x00000400   Zero   RW           17    STACK               startup_stm32f10x_hd.o
 
@@ -1412,12 +1413,12 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
         92         20          0          0         52        738   can1.o
-       404         64          0         18          0       4273   control.o
+       432         70          0         18          0       4289   control.o
        108          4          0          0          0     203653   controlsignal.o
          0          0          0          0          0       4572   core_cm3.o
        220          0          0          0          0      56036   datarecieve.o
       1154         68          0         72        336       3666   hx711.o
-       228         30          0          8          0        882   main.o
+       224         30          0          8          0        874   main.o
        172         22          0          0          0     215481   misc.o
         36          8        304          0       1024        764   startup_stm32f10x_hd.o
        770         14          0          0          0      12348   stm32f10x_can.o
@@ -1430,13 +1431,13 @@ Image component sizes
        328         28          0         20          0       1917   system_stm32f10x.o
         68         18          0          4          0     203717   tickdelay.o
        172         20          0         16          0       2270   timer6.o
-       216         34          0          0          0        510   timerctrltask.o
+       252         34          0          0          0        534   timerctrltask.o
         20          6          0          0          0        432   usart1.o
        280         34          0          0          0       1146   usart2.o
       1944        122          0          0      48430       6532   ws2812b.o
 
     ----------------------------------------------------------------------
-      8660        650        336        160      49844     802576   Object Totals
+      8720        656        336        160      49844     802608   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         18          0          0          2          2          0   (incl. Padding)
 
@@ -1488,15 +1489,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      9528        676        336        164      49844     799200   Grand Totals
-      9528        676        336        164      49844     799200   ELF Image Totals
-      9528        676        336        164          0          0   ROM Totals
+      9588        682        336        164      49844     799232   Grand Totals
+      9588        682        336        164      49844     799232   ELF Image Totals
+      9588        682        336        164          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 9864 (   9.63kB)
+    Total RO  Size (Code + RO Data)                 9924 (   9.69kB)
     Total RW  Size (RW Data + ZI Data)             50008 (  48.84kB)
-    Total ROM Size (Code + RO Data + RW Data)      10028 (   9.79kB)
+    Total ROM Size (Code + RO Data + RW Data)      10088 (   9.85kB)
 
 ==============================================================================
 

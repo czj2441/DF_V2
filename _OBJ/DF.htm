@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\_OBJ\DF.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\_OBJ\DF.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Oct 21 14:30:18 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Nov 25 14:55:51 2020
 <BR><P>
 <H3>Maximum Stack Usage =        112 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -811,7 +811,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hx711_readAll
 </UL>
 
-<P><STRONG><a name="[82]"></a>ledAdd</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, control.o(i.ledAdd))
+<P><STRONG><a name="[82]"></a>ledAdd</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, control.o(i.ledAdd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ledAdd &rArr; getRand
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ledCtrl
@@ -834,7 +834,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[86]"></a>ledOFF</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, control.o(i.ledOFF))
+<P><STRONG><a name="[86]"></a>ledOFF</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, control.o(i.ledOFF))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ledOFF
 </UL>
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ledCtrl
@@ -853,7 +853,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 198 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 194 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = main &rArr; checkSensors &rArr; hx711_Detect &rArr; hx711_readAll &rArr; __aeabi_ldivmod &rArr; __aeabi_uldivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
@@ -883,7 +883,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[60]"></a>timeTaskControl</STRONG> (Thumb, 182 bytes, Stack size 8 bytes, timerctrltask.o(i.timeTaskControl))
+<P><STRONG><a name="[60]"></a>timeTaskControl</STRONG> (Thumb, 218 bytes, Stack size 8 bytes, timerctrltask.o(i.timeTaskControl))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timeTaskControl
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits

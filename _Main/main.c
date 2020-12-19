@@ -23,13 +23,6 @@ int main() {
     hx711_Init();
     //CAN1_Init();
     while(1) {
-				/*ledStat[0] = 2;
-				ledStat[1] = 2;
-				ledStat[2] = 2;
-				ledStat[3] = 2;
-				ledStat[4] = 2;
-				ledFlash();
-				while(1);*/
         if(ledFlashFlag) {
             ledFlashFlag = 0;
             ledFlash();
@@ -59,7 +52,7 @@ int main() {
         }
         else if(ctrlMode == 3) {//»÷Âú
             ctrlMode = 0;
-						ledAdd();
+						//ledReborn();
             countDownTime = onPowerTime;
 						sensorDelayTime = 200;
         }

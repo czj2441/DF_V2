@@ -20,4 +20,8 @@ void timeTaskControl() {
 		}
 		if(sensorDelayTime) sensorDelayTime --;
 		//if(onPowerTime % 3000 == 0) ledFlashFlag = 1;
+		if(enAct && (onPowerTime >= countDownTime + TimeoutTimeLenth - 200)) {//×Ô¶¯¼ÓµÆ
+            ctrlMode = 2;
+            countDownTime = onPowerTime;
+		}
 }

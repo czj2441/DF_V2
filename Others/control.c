@@ -29,13 +29,18 @@ void ledCtrl(u8 ledID, u8 ledMode) {
 
 void ledOFF() {
     for(u8 i = 0; i < 5; i++) ledCtrl(i, 0);
+		fullOnLedNum = 0;
 }
 
 void ledAdd() {
     u8 randomLedNum;
     ledCtrl(halfOnLed, 2);//全开上一个半开LED
-    fullOnLedNum++;
-    if(fullOnLedNum == 5) {//若LED已经全开
+		fullOnLedNum++;
+		if(fullOnLedNum > 5) {//若LED已经全开
+        ctrlMode = 1;
+        return;
+    }
+		else if(fullOnLedNum == 5) {//若LED已经全开
         ctrlMode = 3;
         return;
     }
@@ -55,7 +60,7 @@ void ledReborn() {
     ledCtrl(randomLedNum, 1);
 }
 
-uint8_t red[][3] = {{0,255,255}}, off[][3] = {{0,0,0}};
+uint8_t red[][3] = {{255,0,0}}, off[][3] = {{0,0,0}};
 
 void ledFlash() {//LED控制
     for(u8 i = 0; i < 5; i++)
